@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A80C2BB11F5B1CE700E378F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BB01F5B1CE700E378F1 /* AppDelegate.swift */; };
+		A80C2BB31F5B1CE700E378F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BB21F5B1CE700E378F1 /* ViewController.swift */; };
+		A80C2BB61F5B1CE700E378F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BB41F5B1CE700E378F1 /* Main.storyboard */; };
+		A80C2BB81F5B1CE700E378F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BB71F5B1CE700E378F1 /* Assets.xcassets */; };
+		A80C2BBB1F5B1CE700E378F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BB91F5B1CE700E378F1 /* LaunchScreen.storyboard */; };
+		A80C2BC61F5B1CE700E378F1 /* Airpact_FireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BC51F5B1CE700E378F1 /* Airpact_FireTests.swift */; };
+		A80C2BD11F5B1CE700E378F1 /* Airpact_FireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BD01F5B1CE700E378F1 /* Airpact_FireUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A80C2BC21F5B1CE700E378F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80C2BA51F5B1CE700E378F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80C2BAC1F5B1CE700E378F1;
+			remoteInfo = "Airpact Fire";
+		};
+		A80C2BCD1F5B1CE700E378F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80C2BA51F5B1CE700E378F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A80C2BAC1F5B1CE700E378F1;
+			remoteInfo = "Airpact Fire";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A80C2BAD1F5B1CE700E378F1 /* Airpact Fire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airpact Fire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80C2BB01F5B1CE700E378F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A80C2BB21F5B1CE700E378F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A80C2BB51F5B1CE700E378F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A80C2BB71F5B1CE700E378F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A80C2BBA1F5B1CE700E378F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A80C2BBC1F5B1CE700E378F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80C2BC11F5B1CE700E378F1 /* Airpact FireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airpact FireTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80C2BC51F5B1CE700E378F1 /* Airpact_FireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airpact_FireTests.swift; sourceTree = "<group>"; };
+		A80C2BC71F5B1CE700E378F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80C2BCC1F5B1CE700E378F1 /* Airpact FireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airpact FireUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80C2BD01F5B1CE700E378F1 /* Airpact_FireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airpact_FireUITests.swift; sourceTree = "<group>"; };
+		A80C2BD21F5B1CE700E378F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A80C2BAA1F5B1CE700E378F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80C2BBE1F5B1CE700E378F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80C2BC91F5B1CE700E378F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A80C2BA41F5B1CE700E378F1 = {
+			isa = PBXGroup;
+			children = (
+				A80C2BAF1F5B1CE700E378F1 /* Airpact Fire */,
+				A80C2BC41F5B1CE700E378F1 /* Airpact FireTests */,
+				A80C2BCF1F5B1CE700E378F1 /* Airpact FireUITests */,
+				A80C2BAE1F5B1CE700E378F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A80C2BAE1F5B1CE700E378F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2BAD1F5B1CE700E378F1 /* Airpact Fire.app */,
+				A80C2BC11F5B1CE700E378F1 /* Airpact FireTests.xctest */,
+				A80C2BCC1F5B1CE700E378F1 /* Airpact FireUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80C2BAF1F5B1CE700E378F1 /* Airpact Fire */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2BB01F5B1CE700E378F1 /* AppDelegate.swift */,
+				A80C2BB21F5B1CE700E378F1 /* ViewController.swift */,
+				A80C2BB41F5B1CE700E378F1 /* Main.storyboard */,
+				A80C2BB71F5B1CE700E378F1 /* Assets.xcassets */,
+				A80C2BB91F5B1CE700E378F1 /* LaunchScreen.storyboard */,
+				A80C2BBC1F5B1CE700E378F1 /* Info.plist */,
+			);
+			path = "Airpact Fire";
+			sourceTree = "<group>";
+		};
+		A80C2BC41F5B1CE700E378F1 /* Airpact FireTests */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2BC51F5B1CE700E378F1 /* Airpact_FireTests.swift */,
+				A80C2BC71F5B1CE700E378F1 /* Info.plist */,
+			);
+			path = "Airpact FireTests";
+			sourceTree = "<group>";
+		};
+		A80C2BCF1F5B1CE700E378F1 /* Airpact FireUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2BD01F5B1CE700E378F1 /* Airpact_FireUITests.swift */,
+				A80C2BD21F5B1CE700E378F1 /* Info.plist */,
+			);
+			path = "Airpact FireUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A80C2BAC1F5B1CE700E378F1 /* Airpact Fire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80C2BD51F5B1CE700E378F1 /* Build configuration list for PBXNativeTarget "Airpact Fire" */;
+			buildPhases = (
+				A80C2BA91F5B1CE700E378F1 /* Sources */,
+				A80C2BAA1F5B1CE700E378F1 /* Frameworks */,
+				A80C2BAB1F5B1CE700E378F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Airpact Fire";
+			productName = "Airpact Fire";
+			productReference = A80C2BAD1F5B1CE700E378F1 /* Airpact Fire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A80C2BC01F5B1CE700E378F1 /* Airpact FireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80C2BD81F5B1CE700E378F1 /* Build configuration list for PBXNativeTarget "Airpact FireTests" */;
+			buildPhases = (
+				A80C2BBD1F5B1CE700E378F1 /* Sources */,
+				A80C2BBE1F5B1CE700E378F1 /* Frameworks */,
+				A80C2BBF1F5B1CE700E378F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80C2BC31F5B1CE700E378F1 /* PBXTargetDependency */,
+			);
+			name = "Airpact FireTests";
+			productName = "Airpact FireTests";
+			productReference = A80C2BC11F5B1CE700E378F1 /* Airpact FireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A80C2BCB1F5B1CE700E378F1 /* Airpact FireUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A80C2BDB1F5B1CE700E378F1 /* Build configuration list for PBXNativeTarget "Airpact FireUITests" */;
+			buildPhases = (
+				A80C2BC81F5B1CE700E378F1 /* Sources */,
+				A80C2BC91F5B1CE700E378F1 /* Frameworks */,
+				A80C2BCA1F5B1CE700E378F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A80C2BCE1F5B1CE700E378F1 /* PBXTargetDependency */,
+			);
+			name = "Airpact FireUITests";
+			productName = "Airpact FireUITests";
+			productReference = A80C2BCC1F5B1CE700E378F1 /* Airpact FireUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80C2BA51F5B1CE700E378F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Edoardo Franco Vianelli";
+				TargetAttributes = {
+					A80C2BAC1F5B1CE700E378F1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					A80C2BC01F5B1CE700E378F1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A80C2BAC1F5B1CE700E378F1;
+					};
+					A80C2BCB1F5B1CE700E378F1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A80C2BAC1F5B1CE700E378F1;
+					};
+				};
+			};
+			buildConfigurationList = A80C2BA81F5B1CE700E378F1 /* Build configuration list for PBXProject "Airpact Fire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A80C2BA41F5B1CE700E378F1;
+			productRefGroup = A80C2BAE1F5B1CE700E378F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A80C2BAC1F5B1CE700E378F1 /* Airpact Fire */,
+				A80C2BC01F5B1CE700E378F1 /* Airpact FireTests */,
+				A80C2BCB1F5B1CE700E378F1 /* Airpact FireUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80C2BAB1F5B1CE700E378F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80C2BBB1F5B1CE700E378F1 /* LaunchScreen.storyboard in Resources */,
+				A80C2BB81F5B1CE700E378F1 /* Assets.xcassets in Resources */,
+				A80C2BB61F5B1CE700E378F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80C2BBF1F5B1CE700E378F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80C2BCA1F5B1CE700E378F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A80C2BA91F5B1CE700E378F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80C2BB31F5B1CE700E378F1 /* ViewController.swift in Sources */,
+				A80C2BB11F5B1CE700E378F1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80C2BBD1F5B1CE700E378F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80C2BC61F5B1CE700E378F1 /* Airpact_FireTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80C2BC81F5B1CE700E378F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80C2BD11F5B1CE700E378F1 /* Airpact_FireUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A80C2BC31F5B1CE700E378F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80C2BAC1F5B1CE700E378F1 /* Airpact Fire */;
+			targetProxy = A80C2BC21F5B1CE700E378F1 /* PBXContainerItemProxy */;
+		};
+		A80C2BCE1F5B1CE700E378F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A80C2BAC1F5B1CE700E378F1 /* Airpact Fire */;
+			targetProxy = A80C2BCD1F5B1CE700E378F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A80C2BB41F5B1CE700E378F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80C2BB51F5B1CE700E378F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A80C2BB91F5B1CE700E378F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A80C2BBA1F5B1CE700E378F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A80C2BD31F5B1CE700E378F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A80C2BD41F5B1CE700E378F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A80C2BD61F5B1CE700E378F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Airpact Fire/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EdoardoFV.Airpact-Fire";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A80C2BD71F5B1CE700E378F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Airpact Fire/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EdoardoFV.Airpact-Fire";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A80C2BD91F5B1CE700E378F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Airpact FireTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EdoardoFV.Airpact-FireTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airpact Fire.app/Airpact Fire";
+			};
+			name = Debug;
+		};
+		A80C2BDA1F5B1CE700E378F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Airpact FireTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EdoardoFV.Airpact-FireTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Airpact Fire.app/Airpact Fire";
+			};
+			name = Release;
+		};
+		A80C2BDC1F5B1CE700E378F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Airpact FireUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EdoardoFV.Airpact-FireUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Airpact Fire";
+			};
+			name = Debug;
+		};
+		A80C2BDD1F5B1CE700E378F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Airpact FireUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "EdoardoFV.Airpact-FireUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Airpact Fire";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A80C2BA81F5B1CE700E378F1 /* Build configuration list for PBXProject "Airpact Fire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80C2BD31F5B1CE700E378F1 /* Debug */,
+				A80C2BD41F5B1CE700E378F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A80C2BD51F5B1CE700E378F1 /* Build configuration list for PBXNativeTarget "Airpact Fire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80C2BD61F5B1CE700E378F1 /* Debug */,
+				A80C2BD71F5B1CE700E378F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A80C2BD81F5B1CE700E378F1 /* Build configuration list for PBXNativeTarget "Airpact FireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80C2BD91F5B1CE700E378F1 /* Debug */,
+				A80C2BDA1F5B1CE700E378F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A80C2BDB1F5B1CE700E378F1 /* Build configuration list for PBXNativeTarget "Airpact FireUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80C2BDC1F5B1CE700E378F1 /* Debug */,
+				A80C2BDD1F5B1CE700E378F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80C2BA51F5B1CE700E378F1 /* Project object */;
+}
