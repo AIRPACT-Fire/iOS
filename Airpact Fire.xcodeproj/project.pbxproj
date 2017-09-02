@@ -8,12 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		A80C2BB11F5B1CE700E378F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BB01F5B1CE700E378F1 /* AppDelegate.swift */; };
-		A80C2BB31F5B1CE700E378F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BB21F5B1CE700E378F1 /* ViewController.swift */; };
 		A80C2BB61F5B1CE700E378F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BB41F5B1CE700E378F1 /* Main.storyboard */; };
 		A80C2BB81F5B1CE700E378F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BB71F5B1CE700E378F1 /* Assets.xcassets */; };
 		A80C2BBB1F5B1CE700E378F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BB91F5B1CE700E378F1 /* LaunchScreen.storyboard */; };
 		A80C2BC61F5B1CE700E378F1 /* Airpact_FireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BC51F5B1CE700E378F1 /* Airpact_FireTests.swift */; };
 		A80C2BD11F5B1CE700E378F1 /* Airpact_FireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BD01F5B1CE700E378F1 /* Airpact_FireUITests.swift */; };
+		A80C2BDF1F5B25ED00E378F1 /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BDE1F5B25ED00E378F1 /* MainMenuCell.swift */; };
+		A80C2BE11F5B299B00E378F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2BE01F5B299B00E378F1 /* LoginViewController.swift */; };
+		A80C2BE51F5B2ECF00E378F1 /* airpact_fire_banner_alpha.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BE21F5B2ECF00E378F1 /* airpact_fire_banner_alpha.png */; };
+		A80C2BE61F5B2ECF00E378F1 /* banner_large.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BE31F5B2ECF00E378F1 /* banner_large.png */; };
+		A80C2BE71F5B2ECF00E378F1 /* banner_small.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BE41F5B2ECF00E378F1 /* banner_small.png */; };
+		A80C2BEC1F5B307900E378F1 /* ic_lock_outline_48pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BE91F5B307900E378F1 /* ic_lock_outline_48pt_2x.png */; };
+		A80C2BED1F5B307900E378F1 /* ic_lock_outline_48pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BEA1F5B307900E378F1 /* ic_lock_outline_48pt_3x.png */; };
+		A80C2BEE1F5B307900E378F1 /* ic_lock_outline_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BEB1F5B307900E378F1 /* ic_lock_outline_48pt.png */; };
+		A80C2BF31F5B331B00E378F1 /* ic_perm_identity_48pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BF01F5B331B00E378F1 /* ic_perm_identity_48pt_2x.png */; };
+		A80C2BF41F5B331B00E378F1 /* ic_perm_identity_48pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BF11F5B331B00E378F1 /* ic_perm_identity_48pt_3x.png */; };
+		A80C2BF51F5B331B00E378F1 /* ic_perm_identity_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BF21F5B331B00E378F1 /* ic_perm_identity_48pt.png */; };
+		A80C2BFE1F5B340700E378F1 /* ic_check_box_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BFB1F5B340700E378F1 /* ic_check_box_2x.png */; };
+		A80C2BFF1F5B340700E378F1 /* ic_check_box_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BFC1F5B340700E378F1 /* ic_check_box_3x.png */; };
+		A80C2C001F5B340700E378F1 /* ic_check_box.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2BFD1F5B340700E378F1 /* ic_check_box.png */; };
+		A80C2C051F5B341D00E378F1 /* ic_check_box_outline_blank_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C021F5B341D00E378F1 /* ic_check_box_outline_blank_2x.png */; };
+		A80C2C061F5B341D00E378F1 /* ic_check_box_outline_blank_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C031F5B341D00E378F1 /* ic_check_box_outline_blank_3x.png */; };
+		A80C2C071F5B341D00E378F1 /* ic_check_box_outline_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C041F5B341D00E378F1 /* ic_check_box_outline_blank.png */; };
+		A80C2C0B1F5B34AE00E378F1 /* ic_info_48pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C081F5B34AE00E378F1 /* ic_info_48pt_2x.png */; };
+		A80C2C0C1F5B34AE00E378F1 /* ic_info_48pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C091F5B34AE00E378F1 /* ic_info_48pt_3x.png */; };
+		A80C2C0D1F5B34AE00E378F1 /* ic_info_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C0A1F5B34AE00E378F1 /* ic_info_48pt.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +55,6 @@
 /* Begin PBXFileReference section */
 		A80C2BAD1F5B1CE700E378F1 /* Airpact Fire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airpact Fire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80C2BB01F5B1CE700E378F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A80C2BB21F5B1CE700E378F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A80C2BB51F5B1CE700E378F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A80C2BB71F5B1CE700E378F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80C2BBA1F5B1CE700E378F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +65,26 @@
 		A80C2BCC1F5B1CE700E378F1 /* Airpact FireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airpact FireUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80C2BD01F5B1CE700E378F1 /* Airpact_FireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airpact_FireUITests.swift; sourceTree = "<group>"; };
 		A80C2BD21F5B1CE700E378F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A80C2BDE1F5B25ED00E378F1 /* MainMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
+		A80C2BE01F5B299B00E378F1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		A80C2BE21F5B2ECF00E378F1 /* airpact_fire_banner_alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airpact_fire_banner_alpha.png; sourceTree = "<group>"; };
+		A80C2BE31F5B2ECF00E378F1 /* banner_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_large.png; sourceTree = "<group>"; };
+		A80C2BE41F5B2ECF00E378F1 /* banner_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner_small.png; sourceTree = "<group>"; };
+		A80C2BE91F5B307900E378F1 /* ic_lock_outline_48pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_lock_outline_48pt_2x.png; sourceTree = "<group>"; };
+		A80C2BEA1F5B307900E378F1 /* ic_lock_outline_48pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_lock_outline_48pt_3x.png; sourceTree = "<group>"; };
+		A80C2BEB1F5B307900E378F1 /* ic_lock_outline_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_lock_outline_48pt.png; sourceTree = "<group>"; };
+		A80C2BF01F5B331B00E378F1 /* ic_perm_identity_48pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_perm_identity_48pt_2x.png; sourceTree = "<group>"; };
+		A80C2BF11F5B331B00E378F1 /* ic_perm_identity_48pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_perm_identity_48pt_3x.png; sourceTree = "<group>"; };
+		A80C2BF21F5B331B00E378F1 /* ic_perm_identity_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_perm_identity_48pt.png; sourceTree = "<group>"; };
+		A80C2BFB1F5B340700E378F1 /* ic_check_box_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check_box_2x.png; sourceTree = "<group>"; };
+		A80C2BFC1F5B340700E378F1 /* ic_check_box_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check_box_3x.png; sourceTree = "<group>"; };
+		A80C2BFD1F5B340700E378F1 /* ic_check_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check_box.png; sourceTree = "<group>"; };
+		A80C2C021F5B341D00E378F1 /* ic_check_box_outline_blank_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check_box_outline_blank_2x.png; sourceTree = "<group>"; };
+		A80C2C031F5B341D00E378F1 /* ic_check_box_outline_blank_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check_box_outline_blank_3x.png; sourceTree = "<group>"; };
+		A80C2C041F5B341D00E378F1 /* ic_check_box_outline_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_check_box_outline_blank.png; sourceTree = "<group>"; };
+		A80C2C081F5B34AE00E378F1 /* ic_info_48pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_info_48pt_2x.png; sourceTree = "<group>"; };
+		A80C2C091F5B34AE00E378F1 /* ic_info_48pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_info_48pt_3x.png; sourceTree = "<group>"; };
+		A80C2C0A1F5B34AE00E378F1 /* ic_info_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_info_48pt.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +115,11 @@
 		A80C2BA41F5B1CE700E378F1 = {
 			isa = PBXGroup;
 			children = (
+				A80C2C0E1F5B34B100E378F1 /* Info Button */,
+				A80C2C011F5B340B00E378F1 /* Check box */,
+				A80C2BF61F5B332000E378F1 /* username */,
+				A80C2BEF1F5B307E00E378F1 /* Login Lock */,
+				A80C2BE81F5B306200E378F1 /* Banner */,
 				A80C2BAF1F5B1CE700E378F1 /* Airpact Fire */,
 				A80C2BC41F5B1CE700E378F1 /* Airpact FireTests */,
 				A80C2BCF1F5B1CE700E378F1 /* Airpact FireUITests */,
@@ -98,11 +141,12 @@
 			isa = PBXGroup;
 			children = (
 				A80C2BB01F5B1CE700E378F1 /* AppDelegate.swift */,
-				A80C2BB21F5B1CE700E378F1 /* ViewController.swift */,
+				A80C2BE01F5B299B00E378F1 /* LoginViewController.swift */,
 				A80C2BB41F5B1CE700E378F1 /* Main.storyboard */,
 				A80C2BB71F5B1CE700E378F1 /* Assets.xcassets */,
 				A80C2BB91F5B1CE700E378F1 /* LaunchScreen.storyboard */,
 				A80C2BBC1F5B1CE700E378F1 /* Info.plist */,
+				A80C2BDE1F5B25ED00E378F1 /* MainMenuCell.swift */,
 			);
 			path = "Airpact Fire";
 			sourceTree = "<group>";
@@ -123,6 +167,60 @@
 				A80C2BD21F5B1CE700E378F1 /* Info.plist */,
 			);
 			path = "Airpact FireUITests";
+			sourceTree = "<group>";
+		};
+		A80C2BE81F5B306200E378F1 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2BE21F5B2ECF00E378F1 /* airpact_fire_banner_alpha.png */,
+				A80C2BE31F5B2ECF00E378F1 /* banner_large.png */,
+				A80C2BE41F5B2ECF00E378F1 /* banner_small.png */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
+		A80C2BEF1F5B307E00E378F1 /* Login Lock */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2BE91F5B307900E378F1 /* ic_lock_outline_48pt_2x.png */,
+				A80C2BEA1F5B307900E378F1 /* ic_lock_outline_48pt_3x.png */,
+				A80C2BEB1F5B307900E378F1 /* ic_lock_outline_48pt.png */,
+			);
+			name = "Login Lock";
+			sourceTree = "<group>";
+		};
+		A80C2BF61F5B332000E378F1 /* username */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2BF01F5B331B00E378F1 /* ic_perm_identity_48pt_2x.png */,
+				A80C2BF11F5B331B00E378F1 /* ic_perm_identity_48pt_3x.png */,
+				A80C2BF21F5B331B00E378F1 /* ic_perm_identity_48pt.png */,
+			);
+			name = username;
+			path = "Airpact Fire";
+			sourceTree = "<group>";
+		};
+		A80C2C011F5B340B00E378F1 /* Check box */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2C021F5B341D00E378F1 /* ic_check_box_outline_blank_2x.png */,
+				A80C2C031F5B341D00E378F1 /* ic_check_box_outline_blank_3x.png */,
+				A80C2C041F5B341D00E378F1 /* ic_check_box_outline_blank.png */,
+				A80C2BFB1F5B340700E378F1 /* ic_check_box_2x.png */,
+				A80C2BFC1F5B340700E378F1 /* ic_check_box_3x.png */,
+				A80C2BFD1F5B340700E378F1 /* ic_check_box.png */,
+			);
+			name = "Check box";
+			sourceTree = "<group>";
+		};
+		A80C2C0E1F5B34B100E378F1 /* Info Button */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2C081F5B34AE00E378F1 /* ic_info_48pt_2x.png */,
+				A80C2C091F5B34AE00E378F1 /* ic_info_48pt_3x.png */,
+				A80C2C0A1F5B34AE00E378F1 /* ic_info_48pt.png */,
+			);
+			name = "Info Button";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +330,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80C2BEE1F5B307900E378F1 /* ic_lock_outline_48pt.png in Resources */,
+				A80C2BFE1F5B340700E378F1 /* ic_check_box_2x.png in Resources */,
 				A80C2BBB1F5B1CE700E378F1 /* LaunchScreen.storyboard in Resources */,
+				A80C2C001F5B340700E378F1 /* ic_check_box.png in Resources */,
+				A80C2BF41F5B331B00E378F1 /* ic_perm_identity_48pt_3x.png in Resources */,
+				A80C2BF51F5B331B00E378F1 /* ic_perm_identity_48pt.png in Resources */,
+				A80C2BEC1F5B307900E378F1 /* ic_lock_outline_48pt_2x.png in Resources */,
+				A80C2BF31F5B331B00E378F1 /* ic_perm_identity_48pt_2x.png in Resources */,
+				A80C2C071F5B341D00E378F1 /* ic_check_box_outline_blank.png in Resources */,
+				A80C2C0D1F5B34AE00E378F1 /* ic_info_48pt.png in Resources */,
+				A80C2C0B1F5B34AE00E378F1 /* ic_info_48pt_2x.png in Resources */,
+				A80C2BED1F5B307900E378F1 /* ic_lock_outline_48pt_3x.png in Resources */,
 				A80C2BB81F5B1CE700E378F1 /* Assets.xcassets in Resources */,
+				A80C2BE61F5B2ECF00E378F1 /* banner_large.png in Resources */,
+				A80C2BE71F5B2ECF00E378F1 /* banner_small.png in Resources */,
+				A80C2C0C1F5B34AE00E378F1 /* ic_info_48pt_3x.png in Resources */,
+				A80C2C051F5B341D00E378F1 /* ic_check_box_outline_blank_2x.png in Resources */,
+				A80C2C061F5B341D00E378F1 /* ic_check_box_outline_blank_3x.png in Resources */,
 				A80C2BB61F5B1CE700E378F1 /* Main.storyboard in Resources */,
+				A80C2BE51F5B2ECF00E378F1 /* airpact_fire_banner_alpha.png in Resources */,
+				A80C2BFF1F5B340700E378F1 /* ic_check_box_3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80C2BB31F5B1CE700E378F1 /* ViewController.swift in Sources */,
+				A80C2BE11F5B299B00E378F1 /* LoginViewController.swift in Sources */,
 				A80C2BB11F5B1CE700E378F1 /* AppDelegate.swift in Sources */,
+				A80C2BDF1F5B25ED00E378F1 /* MainMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +624,7 @@
 				A80C2BD71F5B1CE700E378F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A80C2BD81F5B1CE700E378F1 /* Build configuration list for PBXNativeTarget "Airpact FireTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +633,7 @@
 				A80C2BDA1F5B1CE700E378F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A80C2BDB1F5B1CE700E378F1 /* Build configuration list for PBXNativeTarget "Airpact FireUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +642,7 @@
 				A80C2BDD1F5B1CE700E378F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
