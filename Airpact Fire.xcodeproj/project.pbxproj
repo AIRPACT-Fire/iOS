@@ -33,6 +33,7 @@
 		A80C2C0B1F5B34AE00E378F1 /* ic_info_48pt_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C081F5B34AE00E378F1 /* ic_info_48pt_2x.png */; };
 		A80C2C0C1F5B34AE00E378F1 /* ic_info_48pt_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C091F5B34AE00E378F1 /* ic_info_48pt_3x.png */; };
 		A80C2C0D1F5B34AE00E378F1 /* ic_info_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = A80C2C0A1F5B34AE00E378F1 /* ic_info_48pt.png */; };
+		A80C2C101F5B3ED100E378F1 /* AirpactLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C2C0F1F5B3ED100E378F1 /* AirpactLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		A80C2C081F5B34AE00E378F1 /* ic_info_48pt_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_info_48pt_2x.png; sourceTree = "<group>"; };
 		A80C2C091F5B34AE00E378F1 /* ic_info_48pt_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_info_48pt_3x.png; sourceTree = "<group>"; };
 		A80C2C0A1F5B34AE00E378F1 /* ic_info_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_info_48pt.png; sourceTree = "<group>"; };
+		A80C2C0F1F5B3ED100E378F1 /* AirpactLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirpactLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				A80C2BB01F5B1CE700E378F1 /* AppDelegate.swift */,
-				A80C2BE01F5B299B00E378F1 /* LoginViewController.swift */,
+				A80C2C111F5B3EF500E378F1 /* Login Files */,
 				A80C2BB41F5B1CE700E378F1 /* Main.storyboard */,
 				A80C2BB71F5B1CE700E378F1 /* Assets.xcassets */,
 				A80C2BB91F5B1CE700E378F1 /* LaunchScreen.storyboard */,
@@ -221,6 +223,15 @@
 				A80C2C0A1F5B34AE00E378F1 /* ic_info_48pt.png */,
 			);
 			name = "Info Button";
+			sourceTree = "<group>";
+		};
+		A80C2C111F5B3EF500E378F1 /* Login Files */ = {
+			isa = PBXGroup;
+			children = (
+				A80C2BE01F5B299B00E378F1 /* LoginViewController.swift */,
+				A80C2C0F1F5B3ED100E378F1 /* AirpactLogin.swift */,
+			);
+			name = "Login Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +388,7 @@
 			files = (
 				A80C2BE11F5B299B00E378F1 /* LoginViewController.swift in Sources */,
 				A80C2BB11F5B1CE700E378F1 /* AppDelegate.swift in Sources */,
+				A80C2C101F5B3ED100E378F1 /* AirpactLogin.swift in Sources */,
 				A80C2BDF1F5B25ED00E378F1 /* MainMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

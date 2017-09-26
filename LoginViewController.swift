@@ -8,13 +8,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+protocol LoginDelegate {
+    
+    func loginSuccessfull()
+    func loginFailed()
+    func loginInitiated()
+    
+}
+
+class LoginViewController: UIViewController, LoginDelegate{
 
     @IBOutlet weak var rememberMeCheck: UIButton!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var loginSpinner: UIActivityIndicatorView!
     var rememberMe : Bool = false
+    var loginAgent : AirpactLogin?
     
     var password : String{
         return passwordField.text!
@@ -36,6 +46,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signInRequested(_ sender: Any) {
+        loginAgent = AirpactLogin()
+        loginAgent?.delegate = self
+        loginAgent?.initiateLogin(username, password)
     }
 
     @IBAction func signUp(_ sender: Any) {
@@ -46,6 +59,31 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func getInfo() {
+    }
+    
+    /*Login Delegate*/
+    
+    func loginSuccessfull(){
+    
+        print("Success")
+        
+        loginSpinner.stopAnimating()
+        loginSpinner.isHidden = true
+    
+    }
+    
+    func loginFailed(){
+        DispatchQueue.main.async(execute: {
+            self.loginSpinner.stopAnimating()
+            let failedAlert = UIAlertController(title: "Login failed", message: "Try a different username or password or try again later", preferredStyle: .alert)
+            failedAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.show(failedAlert, sender: self)
+        })
+    }
+    
+    func loginInitiated(){
+        loginSpinner.isHidden = false
+        loginSpinner.startAnimating()
     }
     
     /*

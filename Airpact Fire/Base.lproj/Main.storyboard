@@ -29,13 +29,13 @@
                                 <rect key="frame" x="54" y="200.5" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RVi-sp-oZ0">
                                 <rect key="frame" x="54" y="238.5" width="305" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M3-s2-Kcu">
                                 <rect key="frame" x="164" y="276.5" width="47" height="30"/>
@@ -104,6 +104,9 @@
                                     <constraint firstAttribute="trailing" secondItem="VAI-vR-7to" secondAttribute="trailing" id="wPf-sH-DQK"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="t32-JQ-2Cj">
+                                <rect key="frame" x="219" y="281" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -112,6 +115,7 @@
                             <constraint firstItem="AX4-QH-DbX" firstAttribute="top" secondItem="Kv5-2l-FvE" secondAttribute="bottom" constant="8" id="47s-YC-uk2"/>
                             <constraint firstItem="u0O-fP-KrT" firstAttribute="leading" secondItem="EsT-UO-gjB" secondAttribute="leadingMargin" id="4xV-Lc-Tfb"/>
                             <constraint firstItem="u0O-fP-KrT" firstAttribute="trailing" secondItem="EsT-UO-gjB" secondAttribute="trailingMargin" id="6Ad-NQ-ER0"/>
+                            <constraint firstItem="t32-JQ-2Cj" firstAttribute="leading" secondItem="8M3-s2-Kcu" secondAttribute="trailing" constant="8" id="Ckn-ww-Sfb"/>
                             <constraint firstItem="8M3-s2-Kcu" firstAttribute="centerX" secondItem="EsT-UO-gjB" secondAttribute="centerX" id="Cr5-Mh-3wC"/>
                             <constraint firstItem="6ti-xP-lcc" firstAttribute="centerY" secondItem="EsT-UO-gjB" secondAttribute="centerY" id="HbF-7c-gyG"/>
                             <constraint firstItem="z99-V9-GQW" firstAttribute="leading" secondItem="Kv5-2l-FvE" secondAttribute="trailing" constant="8" id="My6-sN-LG9"/>
@@ -122,11 +126,13 @@
                             <constraint firstItem="6ti-xP-lcc" firstAttribute="top" secondItem="AX4-QH-DbX" secondAttribute="bottom" constant="50" id="cjb-0g-U7R"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RVi-sp-oZ0" secondAttribute="trailing" id="fA1-Qd-zXB"/>
                             <constraint firstItem="z99-V9-GQW" firstAttribute="leading" secondItem="Kv5-2l-FvE" secondAttribute="trailing" constant="8" id="frd-lN-mEP"/>
+                            <constraint firstItem="6ti-xP-lcc" firstAttribute="top" secondItem="t32-JQ-2Cj" secondAttribute="bottom" constant="17.5" id="iOz-4o-erS"/>
                             <constraint firstItem="wrK-jo-9yt" firstAttribute="top" secondItem="3ou-L0-ocg" secondAttribute="bottom" constant="8" id="kuY-De-dTb"/>
                             <constraint firstItem="u0O-fP-KrT" firstAttribute="top" secondItem="xAx-7W-8l6" secondAttribute="bottom" constant="30" id="oha-Gh-dz0"/>
                             <constraint firstItem="6ti-xP-lcc" firstAttribute="centerX" secondItem="EsT-UO-gjB" secondAttribute="centerX" id="pBt-UJ-H48"/>
                             <constraint firstItem="3ou-L0-ocg" firstAttribute="trailing" secondItem="EsT-UO-gjB" secondAttribute="trailingMargin" id="qZX-Wd-6Nn"/>
                             <constraint firstItem="8M3-s2-Kcu" firstAttribute="top" secondItem="RVi-sp-oZ0" secondAttribute="bottom" constant="8" id="qha-No-0cC"/>
+                            <constraint firstItem="t32-JQ-2Cj" firstAttribute="top" secondItem="RVi-sp-oZ0" secondAttribute="bottom" constant="12.5" id="r2U-2e-9aV"/>
                             <constraint firstItem="RVi-sp-oZ0" firstAttribute="leading" secondItem="AX4-QH-DbX" secondAttribute="trailing" constant="8" id="rXU-UY-cT9"/>
                             <constraint firstItem="RVi-sp-oZ0" firstAttribute="leading" secondItem="AX4-QH-DbX" secondAttribute="trailing" constant="8" id="xyj-d3-bIj"/>
                             <constraint firstItem="Kv5-2l-FvE" firstAttribute="top" secondItem="u0O-fP-KrT" secondAttribute="bottom" constant="50" id="yTi-uA-ZkB"/>
@@ -135,6 +141,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginSpinner" destination="t32-JQ-2Cj" id="XFO-SB-THt"/>
                         <outlet property="passwordField" destination="RVi-sp-oZ0" id="M3c-kr-bN4"/>
                         <outlet property="rememberMeCheck" destination="RaJ-Nh-857" id="LPk-1h-Jgw"/>
                         <outlet property="usernameField" destination="z99-V9-GQW" id="h9B-97-ThK"/>
