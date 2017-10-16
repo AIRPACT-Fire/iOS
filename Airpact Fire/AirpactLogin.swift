@@ -71,11 +71,6 @@ class AirpactLogin : NSObject, URLSessionDelegate{
                     print("error decoding json response")
                 }
             }
-            
-            if let responseString = String(data: data!, encoding: .utf8){
-                print(responseString)
-                self.delegate?.loginSuccessfull()
-            }
         }
     }
     
