@@ -10,6 +10,8 @@ import Foundation
 
 class AirpactLogin : NSObject, URLSessionDelegate{
     
+    private var userProfile : Profile?
+    
     var delegate : LoginDelegate?
     
     override init() {
@@ -62,7 +64,7 @@ class AirpactLogin : NSObject, URLSessionDelegate{
                 do{
                     if let jsonEncoding = try JSONSerialization.jsonObject(with: u_data, options: JSONSerialization.ReadingOptions()) as? Dictionary<String,String>{
                         if isAuthenticationSuccessfull(response: jsonEncoding){
-                            delegate?.loginSuccessfull()
+                            delegate?.loginSuccessfull(userProfile: self.userProfile!)
                         }else{
                             delegate?.loginFailed()
                         }
@@ -73,11 +75,13 @@ class AirpactLogin : NSObject, URLSessionDelegate{
             }
         }
     }
-    
+        
     func initiateLogin(_ username : String, _ password : String){
         delegate?.loginInitiated()
         
         /*Form the URL*/
+        
+        self.userProfile = Profile(name: username, logins: 0, submittedPosts: 0, firstLoginDate: Date(timeIntervalSinceNow: 0))
         
         let serverRequest = formURLRequest(username, password)
             
@@ -85,6 +89,7 @@ class AirpactLogin : NSObject, URLSessionDelegate{
             (data : Data?, response : URLResponse?, error : Error?) in
             self.handleLoginResponse(data: data, response: response, error: error)
         })
+        
         loginTask.resume()
     }
     

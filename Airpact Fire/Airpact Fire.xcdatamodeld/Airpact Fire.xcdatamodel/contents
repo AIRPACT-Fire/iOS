@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16B2657" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CoreProfile" representedClassName="CoreProfile" syncable="YES" codeGenerationType="class">
+        <attribute name="firstLoginDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logins" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submittedPosts" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Post" representedClassName="Post" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="CoreProfile" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Post" positionX="-63" positionY="9" width="128" height="45"/>
+    </elements>
+</model>

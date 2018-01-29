@@ -8,8 +8,14 @@
 
 import UIKit
 
+protocol ImageCollectionDelegate{
+    func changedImage(index : Int)
+}
+
 class UIImageCollection: UIView {
 
+    var delegate : ImageCollectionDelegate?
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -20,22 +26,28 @@ class UIImageCollection: UIView {
     
     private let imageDisplayer = UIImageView()
     
-    private var currentIndex = 0
+    private var current_index = 0
+    
+    func setCurrentIndex(newIndex : Int){
+        self.current_index = newIndex
+        self.delegate?.changedImage(index: current_index)
+    }
+    
     private var imageCollection = [UIImage]()
     
     func loadCurrentIndex(){
-        self.imageDisplayer.image = imageCollection[currentIndex]
+        self.imageDisplayer.image = imageCollection[current_index]
     }
     
     func incrementCurrentIndex(){
-        if (currentIndex + 1 < self.imageCollection.count){
-            currentIndex += 1
+        if (current_index + 1 < self.imageCollection.count){
+            setCurrentIndex(newIndex: current_index+1)
         }
     }
     
     func decrementCurrentIndex(){
-        if (currentIndex - 1 >= 0){
-            currentIndex -= 1
+        if (current_index - 1 >= 0){
+            setCurrentIndex(newIndex: current_index-1)
         }
     }
     

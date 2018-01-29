@@ -12,17 +12,18 @@ import MapKit
 
 //implement queued photos when phone is not connected
 
-class MainMapViewController: UIViewController, UINavigationControllerDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate, AirpactFireMapDelegate{
+protocol MainMapReturnDelegate {
+    func requestedPictureRetake()
+}
 
-    let postManager = PostManager()
-    
+class MainMapViewController: UIViewController, UINavigationControllerDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate, AirpactFireMapDelegate, MainMapReturnDelegate{
+
+    private var currentProfile : Profile?
+    private let postManager = PostManager()
     @IBOutlet private weak var usernameLabel: UILabel!
-    
-    var username : String = ""
-    
     @IBOutlet weak var map: AirpactFireMap!
-    let locationManager = CLLocationManager()
-    var picker : UIImagePickerController?
+    private let locationManager = CLLocationManager()
+    private var picker : UIImagePickerController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
         
         self.map.mapDelegate = self
         
-        usernameLabel.text = username
+        self.usernameLabel.text = self.currentProfile?.Name
         
         self.locationManager.delegate = self
         
@@ -43,6 +44,10 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
         }
         
         // Do any additional setup after loading the view.
+    }
+    
+    func setProfile(userProfile : Profile){
+        self.currentProfile = userProfile
     }
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -70,7 +75,7 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
         // Dispose of any resources that can be recreated.
     }
     
-    var single : Bool?
+    var single : Bool = false
     
     func promptSingleOrDoubleImage(){
         let singleDoubleAlert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
@@ -79,7 +84,7 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
             (action : UIAlertAction?) in
             
             self.single = true
-            self.showPicker(true)
+            self.showPicker()
         
         }))
         singleDoubleAlert.addAction(UIAlertAction(title: "Double", style: .default, handler: {
@@ -87,7 +92,7 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
             (action : UIAlertAction?) in
             
             self.single = false
-            self.showPicker(false)
+            self.showPicker()
             
         }))
         singleDoubleAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -100,7 +105,7 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
         picker?.sourceType = source
     }
     
-    func showPicker(_ single : Bool){
+    func showPicker(){
         if let imagePicker = picker{
             present(imagePicker, animated: true, completion: {
                 print("finished")
@@ -133,8 +138,8 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
         
         let secondImagePrompt = UIAlertController(title: "Please pick a second image", message: "(possibly of the same location)", preferredStyle: .alert)
         secondImagePrompt.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { (action : UIAlertAction?) in
-            self.showPicker(true)
-            self.single = nil
+            self.showPicker()
+            self.single = true
         }))
         present(secondImagePrompt, animated: true, completion: {
             
@@ -157,6 +162,10 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
             pickedImages.append(image)
+            if (pickedImages.count > 2){
+                pickedImages.remove(at: 0)
+                pickedImages.remove(at: 1)
+            }
         }
         dismiss(animated: true, completion: {
             if self.single == false{
@@ -167,6 +176,9 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
         })
     }
     
+    @IBAction func getProfileInfo() {
+        self.performSegue(withIdentifier: "profileDetailsSegue", sender: self)
+    }
     
     // MARK: - Navigation
 
@@ -177,10 +189,15 @@ class MainMapViewController: UIViewController, UINavigationControllerDelegate, C
     
         if let destinationView = segue.destination as? TargetSelectionViewController{
             destinationView.loadImages(images: self.pickedImages)
+            destinationView.mainMapDelegate = self
+        }else if let profileDetailView = segue.destination as? ProfileDetailViewController{
+            profileDetailView.setProfile(profile: currentProfile!)
         }
     }
     
-
+    func requestedPictureRetake() {
+        self.showPicker()
+    }
 }
 
 

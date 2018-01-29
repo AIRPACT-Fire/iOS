@@ -1,5 +1,5 @@
 //
-//  CircularLabel.swift
+//  CircularField.swift
 //  Airpact Fire
 //
 //  Created by Edoardo Franco Vianelli on 10/15/17.
@@ -8,7 +8,11 @@
 
 import UIKit
 
-class CircularLabel: UILabel {
+protocol CircularFieldDelegate{
+    func textEntered(text : String?, sender : CircularField)
+}
+
+class CircularField: UITextField {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -17,6 +21,14 @@ class CircularLabel: UILabel {
         // Drawing code
     }
     */
+    
+    var CircularFieldDelegate : CircularFieldDelegate?
+    
+    private var _id : Int = 0
+    
+    var ID : Int{
+        return self._id
+    }
     
     private func initAspect(){
         self.alpha = 0.75
@@ -44,11 +56,22 @@ class CircularLabel: UILabel {
         self.frame.origin = tapLocation
     }
     
-    init(frame: CGRect, text : String) {
+    internal func keyboardHide(){
+        self.resignFirstResponder()
+        self.CircularFieldDelegate?.textEntered(text: self.text, sender: self)
+    }
+    
+    private func setKeyboardHide(){
+        self.addTarget(self, action: #selector(keyboardHide), for: UIControlEvents.editingDidEndOnExit)
+    }
+    
+    init(frame: CGRect, text : String, id : Int) {
         super.init(frame: frame)
+        self._id = id
         self.isUserInteractionEnabled = true
         self.initAspect()
         self.initPanGesture()
+        self.setKeyboardHide()
         self.textAlignment = .center
         self.text = text
     }

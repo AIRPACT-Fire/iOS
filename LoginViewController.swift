@@ -10,7 +10,7 @@ import UIKit
 
 protocol LoginDelegate {
     
-    func loginSuccessfull()
+    func loginSuccessfull(userProfile : Profile)
     func loginFailed()
     func loginInitiated()
     
@@ -138,14 +138,29 @@ class LoginViewController: UIViewController, LoginDelegate, CheckBoxButtonDelega
     func tapped(checked: Bool) {
         rememberMe = !rememberMe
     }
-    
+        
     /*MARK: Login Delegate*/
     
-    func loginSuccessfull(){
+    var userProfile : Profile?
     
+    func loginSuccessfull(userProfile : Profile){
+    
+        var resultingProfile = userProfile
+        
         print("Success")
         
         loginTerminated()
+        
+        if let storedProfile = LoginData.fetchProfile(userProfile){        //see if there is a profile with this name
+            storedProfile.Logins += 1 //increase the logins by 1
+            storedProfile.FirstLoginDate = userProfile.FirstLoginDate
+            resultingProfile = storedProfile
+        }else{ //there is no such profile
+            resultingProfile.Logins += 1 //increase logins by 1
+            LoginData.save(resultingProfile)
+        }
+        
+        self.userProfile = resultingProfile
         
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "mainViewSegue", sender: self)
@@ -183,7 +198,7 @@ class LoginViewController: UIViewController, LoginDelegate, CheckBoxButtonDelega
         // Pass the selected object to the new view controller.
     
         if let destination = segue.destination as? MainMapViewController{
-            destination.username = username
+            destination.setProfile(userProfile: self.userProfile!)
         }
     }
     
