@@ -44,7 +44,7 @@ class CircularField: UITextField {
         self.addGestureRecognizer(panMotion)
     }
     
-    internal func handlePanGesture(gesture : UIPanGestureRecognizer){
+    @objc internal func handlePanGesture(gesture : UIPanGestureRecognizer){
         let tapLocation = gesture.location(in: self.superview)
         if (tapLocation.x + self.frame.size.width > self.superview!.frame.size.width
             || tapLocation.y + self.frame.size.height > self.superview!.frame.size.height
@@ -56,7 +56,7 @@ class CircularField: UITextField {
         self.frame.origin = tapLocation
     }
     
-    internal func keyboardHide(){
+    @objc internal func keyboardHide(){
         self.resignFirstResponder()
         self.CircularFieldDelegate?.textEntered(text: self.text, sender: self)
     }

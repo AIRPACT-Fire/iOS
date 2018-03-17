@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="26C-06-pSV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="26C-06-pSV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -149,12 +149,36 @@
                         <outlet property="passwordField" destination="RVi-sp-oZ0" id="M3c-kr-bN4"/>
                         <outlet property="rememberMeCheck" destination="RaJ-Nh-857" id="LPk-1h-Jgw"/>
                         <outlet property="usernameField" destination="z99-V9-GQW" id="h9B-97-ThK"/>
-                        <segue destination="xF0-Bm-y9g" kind="showDetail" identifier="mainViewSegue" action="showViewController:sender:" id="fql-I6-qie"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gkU-yx-1ks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="-174.06296851574214"/>
+            <point key="canvasLocation" x="137" y="-994"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lHQ-iP-Zie">
+            <objects>
+                <viewController id="lCu-NG-WIM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qA9-Gi-Jd3"/>
+                        <viewControllerLayoutGuide type="bottom" id="95y-Cm-12S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ofm-vy-vA1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0y-5i-Sxb">
+                                <rect key="frame" x="94" y="247" width="39" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="fasdf"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3U-b3-Pgk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032.8" y="-994.45277361319347"/>
         </scene>
         <!--Main Map View Controller-->
         <scene sceneID="dqS-cX-YnJ">
@@ -365,6 +389,14 @@
             </objects>
             <point key="canvasLocation" x="1925.5999999999999" y="-174.06296851574214"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="wX0-ub-AtG">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Y7B-Qg-6nj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cci-5O-47r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926" y="-994"/>
+        </scene>
         <!--Target Selection View Controller-->
         <scene sceneID="Xtn-w7-SmZ">
             <objects>
@@ -485,7 +517,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="96"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vev-Z9-8aR">
-                                                <rect key="frame" x="48" y="27" width="77" height="42"/>
+                                                <rect key="frame" x="49" y="27" width="75" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Retake"/>
                                                 <connections>
@@ -503,9 +535,12 @@
                                         <rect key="frame" x="172" y="0.0" width="171" height="96"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aj-8n-iMx">
-                                                <rect key="frame" x="39" y="27" width="93" height="42"/>
+                                                <rect key="frame" x="40.5" y="27" width="90" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Proceed"/>
+                                                <connections>
+                                                    <action selector="proceedPressed:" destination="MFa-zr-Cf5" eventType="primaryActionTriggered" id="ETC-PH-H6W"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -566,7 +601,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5B-Dw-clo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="567.16641679160421"/>
+            <point key="canvasLocation" x="1396" y="690"/>
         </scene>
     </scenes>
     <resources>

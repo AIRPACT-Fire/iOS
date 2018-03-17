@@ -18,6 +18,9 @@ class TargetSelectionViewController: UIViewController, ImageCollectionDelegate, 
         }
     }
 
+    @IBAction func proceedPressed(_ sender: Any) {
+        
+    }
     
     var singleImageSelection : Bool{
         return self.images.count == 1

@@ -55,7 +55,7 @@ class CheckBoxButton: UIButton {
         assert(checked_image != nil)
     }
     
-    internal func set_tapped(){
+    @objc internal func set_tapped(){
         tapped = !tapped
         setImageForTapped()
         delegate?.tapped(checked: tapped)

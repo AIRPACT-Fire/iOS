@@ -20,10 +20,56 @@ class ProfileDetailViewController: UIViewController, UITableViewDelegate, UITabl
         self.profileTable.delegate = self
         self.profileTable.dataSource = self
         self.usernameLabel.text = self.profile?.Name
-        
+        fetchProfile((profile?.Name)!, "")
         // Do any additional setup after loading the view.
     }
     
+    func fetchProfile(_ username : String, _ password : String){
+
+        
+        self.profile = Profile(name: username, logins: 0, submittedPosts: 0, firstLoginDate: Date(timeIntervalSinceNow: 0))
+        
+        let serverRequest = formProfileURL()
+        
+        let loginTask = URLSession.shared.dataTask(with: serverRequest, completionHandler: {
+            (data : Data?, response : URLResponse?, error : Error?) in
+            self.handleProfileResponse(data: data, response: response, error: error)
+        })
+        
+        loginTask.resume()
+    }
+    
+    func formProfileURL() -> URLRequest{
+        let loginUrl = URL(string: "http://airpactfire.eecs.wsu.edu/user/profile/" + (profile?.Name)!)
+        
+        var loginURLRequest = URLRequest(url: loginUrl!)
+        
+        loginURLRequest.httpMethod = "GET"
+        
+        let jsonBody : NSMutableDictionary = NSMutableDictionary()
+        
+//        jsonBody.setValue(username, forKey: "username")
+//        jsonBody.setValue(password, forKey: "password")
+        
+        var bodyData : Data?
+        
+        do{
+            bodyData = try JSONSerialization.data(withJSONObject: jsonBody, options: JSONSerialization.WritingOptions())
+            loginURLRequest.httpBody = bodyData
+        }catch {
+            print("error")
+        }
+        
+        loginURLRequest.addValue("XMLHttpRequest", forHTTPHeaderField: "X-Requested-With")
+        loginURLRequest.addValue("application/json;charset=utf-8", forHTTPHeaderField: "Content-Type")
+        loginURLRequest.addValue(String(data: bodyData!, encoding: .utf8)!, forHTTPHeaderField: "Content-Length")
+        
+        return loginURLRequest
+    }
+    
+    func handleProfileResponse(data : Data?, response : URLResponse?, error : Error?){
+    
+    }
     func setProfile(profile : Profile){
         self.profile = profile
     }

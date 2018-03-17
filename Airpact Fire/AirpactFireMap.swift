@@ -28,11 +28,11 @@ class AirpactFireMap: MKMapView, UIGestureRecognizerDelegate {
     */
     
     
-    internal func tapHandler(sender : UITapGestureRecognizer){
+    @objc internal func tapHandler(sender : UITapGestureRecognizer){
         mapDelegate?.mapTapFired()
     }
     
-    internal func panHandler(sender : UIPanGestureRecognizer){
+    @objc internal func panHandler(sender : UIPanGestureRecognizer){
         mapDelegate?.mapScrolled()
     }
     

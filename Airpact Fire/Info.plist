@@ -5,11 +5,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Stuff</string>
+	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>stuff</string>
+	<string></string>
 	<key>NSCameraUsageDescription</key>
-	<string>stuff</string>
+	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

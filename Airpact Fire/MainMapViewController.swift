@@ -19,7 +19,6 @@ protocol MainMapReturnDelegate {
 class MainMapViewController: UIViewController, UINavigationControllerDelegate, CLLocationManagerDelegate, UIImagePickerControllerDelegate, AirpactFireMapDelegate, MainMapReturnDelegate{
 
     private var currentProfile : Profile?
-    private let postManager = PostManager()
     @IBOutlet private weak var usernameLabel: UILabel!
     @IBOutlet weak var map: AirpactFireMap!
     private let locationManager = CLLocationManager()

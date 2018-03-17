@@ -66,7 +66,7 @@ class UIImageCollection: UIView {
         self.addGestureRecognizer(rightSwipe)
     }
 
-    func handleSwipe(sender : UISwipeGestureRecognizer){
+    @objc func handleSwipe(sender : UISwipeGestureRecognizer){
         if sender.direction == .left{
             incrementCurrentIndex()
         }else if sender.direction == .right{
