@@ -4,7 +4,7 @@
 //
 //  Created by Edoardo Franco Vianelli on 10/15/17.
 //  Copyright © 2017 Edoardo Franco Vianelli. All rights reserved.
-//
+//  Overhauled by Jesse Bruce 2018
 
 import UIKit
 
@@ -24,7 +24,7 @@ class UIImageCollection: UIView {
     }
     */
     
-    private let imageDisplayer = UIImageView()
+    var imageDisplayer = UIImageView()
     
     private var current_index = 0
     

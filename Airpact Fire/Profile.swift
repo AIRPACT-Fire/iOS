@@ -4,9 +4,10 @@
 //
 //  Created by Edoardo Franco Vianelli on 10/17/17.
 //  Copyright © 2017 Edoardo Franco Vianelli. All rights reserved.
-//
-
+//  Overhauled by Jesse Bruce 2018
 import Foundation
+
+
 
 class Profile{
     
@@ -15,6 +16,15 @@ class Profile{
     private var logins : Int = 0
     private var submittedPosts : Int = 0
     private var firstLoginDate : Date = Date(timeIntervalSinceNow: 0)
+    var images : [AirpactImage?]
+    
+    var Secret : String{
+        get{
+            return self.loginCode
+        }set{
+            self.loginCode = newValue
+        }
+    }
     
     var Name : String{
         get{
@@ -53,6 +63,12 @@ class Profile{
         self.logins = logins
         self.submittedPosts = submittedPosts
         self.firstLoginDate = firstLoginDate
+        self.images = [AirpactImage]()
+    }
+    
+    func addImage(newImage : AirpactImage){
+        images.append(newImage)
+        //UserDefaults.standard.set(images, forKey: "airpactImages")
     }
 
 }

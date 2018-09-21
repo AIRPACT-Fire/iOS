@@ -4,7 +4,7 @@
 //
 //  Created by Edoardo Franco Vianelli on 9/2/17.
 //  Copyright © 2017 Edoardo Franco Vianelli. All rights reserved.
-//
+//  Overhauled by Jesse Bruce 2018
 
 import Foundation
 
@@ -47,9 +47,10 @@ class AirpactLogin : NSObject, URLSessionDelegate{
         return loginURLRequest
     }
     
-    private func isAuthenticationSuccessfull(response : Dictionary<String, String>) -> Bool{
+    private func isAuthenticationSuccessful(response : [String: Any]) -> Bool{
         if (response.index(forKey: "isUser") != nil){
-            return response["isUser"] == "true"
+            self.userProfile!.Secret = response["secretKey"]! as! String
+            return response["isUser"] as! String == "true"
         }
         return false
     }
@@ -62,9 +63,10 @@ class AirpactLogin : NSObject, URLSessionDelegate{
             
             if let u_data = data{
                 do{
-                    if let jsonEncoding = try JSONSerialization.jsonObject(with: u_data, options: JSONSerialization.ReadingOptions()) as? Dictionary<String,String>{
-                        if isAuthenticationSuccessfull(response: jsonEncoding){
-                            delegate?.loginSuccessfull(userProfile: self.userProfile!)
+                    if let jsonEncoding = try JSONSerialization.jsonObject(with: u_data, options: JSONSerialization.ReadingOptions()) as? [String: Any]{
+                        if isAuthenticationSuccessful(response: jsonEncoding){
+                            self.userProfile?.Secret = jsonEncoding["secretKey"]! as! String
+                            delegate?.loginSuccessful(newProfile: self.userProfile!)
                         }else{
                             delegate?.loginFailed()
                         }

@@ -4,15 +4,12 @@
 //
 //  Created by Edoardo Franco Vianelli on 10/15/17.
 //  Copyright © 2017 Edoardo Franco Vianelli. All rights reserved.
-//
+//  Overhauled by Jesse Bruce 2018
 
 import UIKit
 
-protocol CircularFieldDelegate{
-    func textEntered(text : String?, sender : CircularField)
-}
 
-class CircularField: UITextField {
+class CircularField: UILabel {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -22,7 +19,6 @@ class CircularField: UITextField {
     }
     */
     
-    var CircularFieldDelegate : CircularFieldDelegate?
     
     private var _id : Int = 0
     
@@ -46,23 +42,18 @@ class CircularField: UITextField {
     
     @objc internal func handlePanGesture(gesture : UIPanGestureRecognizer){
         let tapLocation = gesture.location(in: self.superview)
-        if (tapLocation.x + self.frame.size.width > self.superview!.frame.size.width
-            || tapLocation.y + self.frame.size.height > self.superview!.frame.size.height
+        if (tapLocation.x + self.frame.size.width/2 > self.superview!.frame.size.width
+            || tapLocation.y + self.frame.size.height/2 > self.superview!.frame.size.height
             || tapLocation.x < 0
             || tapLocation.y < 0){
             return
         }
-        print(tapLocation)
+        //print(tapLocation)
         self.frame.origin = tapLocation
     }
     
     @objc internal func keyboardHide(){
         self.resignFirstResponder()
-        self.CircularFieldDelegate?.textEntered(text: self.text, sender: self)
-    }
-    
-    private func setKeyboardHide(){
-        self.addTarget(self, action: #selector(keyboardHide), for: UIControlEvents.editingDidEndOnExit)
     }
     
     init(frame: CGRect, text : String, id : Int) {
@@ -71,7 +62,7 @@ class CircularField: UITextField {
         self.isUserInteractionEnabled = true
         self.initAspect()
         self.initPanGesture()
-        self.setKeyboardHide()
+        self.keyboardHide()
         self.textAlignment = .center
         self.text = text
     }

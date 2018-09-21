@@ -4,7 +4,7 @@
 //
 //  Created by Edoardo Franco Vianelli on 10/1/17.
 //  Copyright © 2017 Edoardo Franco Vianelli. All rights reserved.
-//
+//  Overhauled by Jesse Bruce 2018
 
 #ifndef Bridging_Header_h
 #define Bridging_Header_h
